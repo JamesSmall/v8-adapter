@@ -250,7 +250,7 @@ public final class V8JavaObjectUtils {
                 V8Object v8Obj = ((V8Object) obj);
                 if (!v8Obj.isUndefined()) {
                     Object ret = cache.identifierToJavaObjectMap.get(v8Obj.get(JAVA_OBJECT_HANDLE_ID).toString()).get();
-                    v8Obj.release();
+                    //v8Obj.release();
                     return ret;
                 } else {
                     v8Obj.release();
