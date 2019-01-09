@@ -663,7 +663,7 @@ public final class V8JavaObjectUtils {
             } else {
                 V8Value translatedJavaArgument = (V8Value) translateJavaArgumentToJavascript(argument, v8, cache);
                 v8Args.push(translatedJavaArgument);
-                translatedJavaArgument.release();
+                //translatedJavaArgument.release();
             }
         }
 
@@ -897,7 +897,7 @@ public final class V8JavaObjectUtils {
                 throw e;
             } finally {
                 if (arrayElement instanceof V8Value) {
-                    ((V8Value) arrayElement).release();
+                    //((V8Value) arrayElement).release();
                 }
             }
         }
@@ -918,7 +918,7 @@ public final class V8JavaObjectUtils {
                 throw e;
             } finally {
                 if (jsObjValue instanceof V8Value) {
-                    ((V8Value) jsObjValue).release();
+                    //((V8Value) jsObjValue).release();
                 }
             }
         }
@@ -975,7 +975,7 @@ public final class V8JavaObjectUtils {
                     throw e;
                 } finally {
                     if (argument instanceof V8Value) {
-                        ((V8Value) argument).release();
+                        //((V8Value) argument).release();
                     }
                 }
             }
@@ -1002,7 +1002,7 @@ public final class V8JavaObjectUtils {
                     throw e;
                 } finally {
                     if (argument instanceof V8Value) {
-                        ((V8Value) argument).release();
+                        //((V8Value) argument).release();
                     }
                 }
             }
